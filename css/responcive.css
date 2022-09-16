@@ -1,0 +1,44 @@
+@media all and (max-width: 768px){
+    .main-heading{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .secound-heading{
+        font-size: 35px;
+    }
+    .small-title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .hero{
+        text-align: center;
+    }
+
+    /* testimonials */
+    .slider{
+        margin-top: 0;
+        margin-left: 0;
+        padding-top: 30px
+    }
+    .slides{
+        padding: 0 10px;
+        text-align: center;
+        margin: 0 20px;
+        margin-top: 70px;
+    }
+    .slides img{
+        position: static;
+        margin: 0 auto;
+        margin-top: -70px;
+    }
+    .slides p{
+        margin-left: 0;
+    }
+}
+@media all and (max-width: 425px){
+    .main-heading{
+        font-size: 40px;
+        line-height: 70px;
+    }
+
+}

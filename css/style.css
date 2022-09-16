@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* *************** Root varibles *************** */
+body{
+    overflow-x: hidden;
+}
+:root{
+    /* colors */
+    --color-primary: #EF000A;
+    --color-secondary: #1C1C1C;
+    --white: #fff;
+    --black: #000;
+    --light: #adadad;
+}
+.main-heading{
+    font-size: 70px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 105px;
+}
+.secound-heading{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+}
+.small-title{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--black);
+}
+p{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--black);
+    line-height: 23px;
+    margin: 20px 0;
+}
+span{
+    color: var(--color-primary);
+}
+section{
+    padding: 70px 0;
+}
+b{
+    font-weight: 600;
+}
+/* Btn */
+
+.btn-primary{
+    padding: 8px 35px;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: var(--color-primary);
+    border-radius: 100px;
+    border: 1px solid var(--color-primary);
+    color: var(--white);
+}
+.btn-primary:hover{
+    background-color: var(--white) !important;
+    border-color: var(--color-primary) !important;
+    color: var(--black) !important;
+}
+.btn-sm{
+    padding: 5px 15px;
+    background-color: var(--color-secondary);
+    font-size: 15px;
+    color: var(--white);
+    border: 1px solid var(--black) !important;
+    border-radius: 50px;
+}
+.btn-sm:hover{
+    border: 1px silid var(--black);
+}
+/* *************** Home *************** */
+
+/* navbar */
+nav.navbar{
+    background-color: rgba(255, 255, 255, 0.377) !important;
+    backdrop-filter: blur(30px);
+    border-bottom: 1px solid var(--black);
+}
+nav.navbar .navbar-nav .nav-item{
+    margin-left: 20px;
+    text-align: center;
+}
+nav.navbar .navbar-nav .nav-item a{
+    color: var(--black);
+}
+.navbar-toggler{
+    box-shadow: none !important;
+    border: none !important;
+    color: var(--black);
+}
+.navbar-toggler i{
+    transition: all 1s ease;
+}
+/* header */
+#home{
+    background: url('../images/hero-bg.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid var(--black);
+    padding: 35px 0;
+}
+.hero{
+    margin-top: 50px;
+}
+
+/* *************** About *************** */
+
+.about-box{
+    margin-top: 50px;
+}
+
+/* *************** companys *************** */
+
+#companys{
+    background-color: var(--color-secondary);
+}
+#companys p{
+    color: var(--white);
+}
+.company-logos{
+    padding: 20px 0;
+    border: solid var(--light);
+    border-width: .5px 0;
+    margin-top: -1px;
+}
+
+/* *************** Testimonials *************** */
+.slider{
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.slides{
+    border: 2px solid var(--black);
+    padding: 10px 10px;
+    margin: 0 70px;
+}
+.slides img{
+    position: relative;
+    top: 0;
+    right: 70px;
+}
+.slides p{
+    margin-left: 30px;
+}
+/* *************** CTA ***************  */
+
+#cta{
+    background-image:  url(../images/bottom-circles.png), url(../images/bottom-img.png);
+    background-position: top center, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+#cta .main-heading{
+    color: var(--white);
+    font-weight: 400;
+}
+#cta p{
+    color: var(--white);
+}
+/* *************** footer ***************  */
+footer{
+    background-color: var(--color-secondary);
+    padding: 30px 0;
+}
+footer p{
+    color: var(--white);
+}
+footer h4{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+footer a{
+    color: var(--white);
+    text-decoration: none;
+    transition: .4s;
+}
+footer a:hover{
+    color: var(--light);
+    text-decoration: none;
+}
+.social-links i{
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 20px;
+    border: 1px solid var(--color-primary);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.social-links i:hover{
+    background-color: var(--color-secondary);
+    color: var(--white);
+    border: 1px solid var(--color-primary);
+    transform: rotate( 360deg);
+}
